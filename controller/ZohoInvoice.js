@@ -9,7 +9,7 @@ Invoice = (req, res) => {
     .get("https://invoice.zoho.com/api/v3/invoices", {
       headers: {
         Authorization:
-          "Zoho-oauthtoken 1000.c1f88dc2da0dd92c57962260ee6001e6.4f8277053f3de88ed1da78eded6a6005",
+          "Zoho-oauthtoken 1000.a1e2d1711d1e3acc92c7eede0ea87318.374f360e2d2fbb72ad8c89092ea6bed1",
         "X-com-zoho-invoice-organizationid": "712479117",
         "Content-Type": "multipart/form-data",
       },
@@ -23,7 +23,6 @@ Invoice = (req, res) => {
       })
 
       res.send(data);
-      
     })
 };
 
