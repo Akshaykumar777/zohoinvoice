@@ -22,16 +22,8 @@ Invoice = (req, res) => {
         data = [...data, {date: invoices.date, client: invoices.company_name, status: invoices.status}]
       })
 
-      //res.send(data);
-      fs.readFile("./index.html", {data: data}, null, (error, data) => {
-          if(error){
-              res.writeHead(404);
-          }else{
-              console.log("data => ", data)
-            res.write(data)
-          }
-          res.end()
-      })
+      res.send(data);
+      
     })
 };
 
